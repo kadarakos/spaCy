@@ -341,6 +341,11 @@ def tl_tokenizer():
 
 
 @pytest.fixture(scope="session")
+def tn_tokenizer():
+    return get_lang_class("tn")().tokenizer
+
+
+@pytest.fixture(scope="session")
 def tr_tokenizer():
     return get_lang_class("tr")().tokenizer
 
